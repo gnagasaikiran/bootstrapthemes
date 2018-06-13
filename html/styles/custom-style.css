@@ -1,0 +1,39 @@
+/*Mobile devices (<768px) starts*/
+@media (min-width: 0px) and (max-width: 767px) {
+	#Header .logo img {
+		width: 60px;
+	}
+	#Banner {
+		padding: 86px 0;
+	}
+	#Banner .inner-text {
+		top: 12%;
+		left: 4%;
+		transform: translate(0);
+	}
+	#Banner .inner-text h1 {
+		font-size: 20px;
+		color: #fff;
+	}
+}
+/*Mobile Devices (<768px) ends*/
+/*Mobile Devices (Landscape mode) Styles Begin */
+@media (min-width: 480px) and (max-width: 767px) {
+	#Banner .inner-text {
+		top: 24%;
+		left: 48%;
+		transform: translateX(-50%);
+	}	
+}
+/* Mobile Devices (Landscape mode) Styles Ends */
+
+/* Small devices (tablets, 768px and up)  Style Begin */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+/* Small devices (tablets, 768px and up)  Style Ends */
+/*large devices style starts*/
+@media (min-width: 992px) and (max-width: 1199px) {
+	
+}
+/*large devices style ends*/
