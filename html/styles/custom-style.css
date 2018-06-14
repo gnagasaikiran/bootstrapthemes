@@ -4,7 +4,7 @@
 		width: 60px;
 	}
 	#Banner {
-		padding: 86px 0;
+		padding-top: 70px;
 	}
 	#Banner .inner-text {
 		top: 12%;
@@ -12,8 +12,18 @@
 		transform: translate(0);
 	}
 	#Banner .inner-text h1 {
-		font-size: 20px;
+		font-size: 18px;
 		color: #fff;
+	}
+	#Banner .inner-text a.btn {
+		font-size: 11px;
+		padding: 10px;
+	}
+	#Banner .bx-wrapper .bx-pager {
+		bottom: 10px;
+	}
+	#Aboutus a.btn {
+		margin-bottom: 10px;
 	}
 }
 /*Mobile Devices (<768px) ends*/
@@ -23,13 +33,21 @@
 		top: 24%;
 		left: 48%;
 		transform: translateX(-50%);
-	}	
+	}
+	#Banner .inner-text h1 {
+		font-size: 20px;
+		color: #fff;
+	}
 }
 /* Mobile Devices (Landscape mode) Styles Ends */
 
 /* Small devices (tablets, 768px and up)  Style Begin */
 @media (min-width: 768px) and (max-width: 991px) {
-
+	#Banner .inner-text {	
+		top: 40%;
+		left: 14%;
+		transform: translate(0);
+	}
 }
 /* Small devices (tablets, 768px and up)  Style Ends */
 /*large devices style starts*/
