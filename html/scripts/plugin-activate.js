@@ -15,6 +15,12 @@ $(document).ready(function() {
       infiniteLoop: true,
       controls: false
   });
+  $('.portfolio-images').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    // autoplay: true,
+    autoplaySpeed: 2000,
+  });
   //mobile menu
   $(".mobile_menu").simpleMobileMenu();
   // smoothscroll

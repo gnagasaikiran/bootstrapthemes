@@ -13,9 +13,12 @@
     <!-- Stylesheet starts-->
     <link rel="stylesheet" type="text/css" href="styles/style.css">
     <link rel="stylesheet" type="text/css" href="styles/custom-style.css">
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <!-- Stylesheet ends-->
     <!-- script files -->
     <script type="text/javascript" src="scripts/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script type="text/javascript" src="scripts/all-plugin.js"></script>
     <script type="text/javascript" src="scripts/plugin-activate.js"></script>
 </head>
@@ -33,10 +36,10 @@
                     <div class="nav-menu">
                         <ul class="menu-items">
                             <li class="active"><a href="#">Home</a></li>
-					        <li><a href="#Aboutus">About</a></li>					          
-					        <li><a href="#Services">Services</a></li>
+                            <li><a href="#Aboutus">About</a></li>
+                            <li><a href="#Services">Services</a></li>
                             <li><a href="#Portfolio">Portfolio</a></li>
-					        <li><a href="#Contact">Contact</a></li>
+                            <li><a href="#Contactus">Contact</a></li>
                         </ul>
                     </div>
                 </div>
@@ -48,56 +51,56 @@
         <li><a href="#Aboutus">About</a></li>
         <li><a href="#Services">Services</a></li>
         <li><a href="#Portfolio">Portfolio</a></li>
-        <li><a href="#Contact">Contact</a></li>
+        <li><a href="#Contactus">Contact</a></li>
     </ul>
     <!-- Header section ends -->
     <!-- banner style starts here -->
     <section id="Banner">
         <ul class="bxslider">
-            <li><img src="images/mountains.jpg" alt="Banner Image">              
-                    <div class="inner-text">
-                    	<div class="container">
-                        <h1>YOUR FAVOURITE SOURCE OF FREE BOOTSTRAP THEMES</h1>                      
+            <li><img src="images/mountains.jpg" alt="Banner Image">
+                <div class="inner-text">
+                    <div class="container">
+                        <h1>YOUR FAVOURITE SOURCE OF FREE BOOTSTRAP THEMES</h1>
                         <hr class="highlighter">
                         <a class="btn" href="javascript:void(0);">Find out More</a>
                     </div>
-                 </div>
+                </div>
             </li>
-            <li><img src="images/mountains.jpg" alt="Banner Image">              
-                    <div class="inner-text">
-                        <div class="container">
-                        <h1>YOUR FAVOURITE SOURCE OF FREE BOOTSTRAP THEMES</h1>                      
+            <li><img src="images/mountains.jpg" alt="Banner Image">
+                <div class="inner-text">
+                    <div class="container">
+                        <h1>YOUR FAVOURITE SOURCE OF FREE BOOTSTRAP THEMES</h1>
                         <hr class="highlighter">
                         <a class="btn" href="javascript:void(0);">Find out More</a>
                     </div>
-                 </div>
+                </div>
             </li>
-            <li><img src="images/mountains.jpg" alt="Banner Image">              
-                    <div class="inner-text">
-                        <div class="container">
-                        <h1>YOUR FAVOURITE SOURCE OF FREE BOOTSTRAP THEMES</h1>                      
+            <li><img src="images/mountains.jpg" alt="Banner Image">
+                <div class="inner-text">
+                    <div class="container">
+                        <h1>YOUR FAVOURITE SOURCE OF FREE BOOTSTRAP THEMES</h1>
                         <hr class="highlighter">
                         <a class="btn" href="javascript:void(0);">Find out More</a>
                     </div>
-                 </div>
+                </div>
             </li>
-        </ul>        
+        </ul>
     </section>
     <!-- banner style ends here -->
     <!-- aboutus section starts -->
     <section id="Aboutus">
         <div class="container">
             <div class="row">
-                 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                     <h1>About US</h1>
-                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                      <a class="btn" href="javascript:void(0);">Learn More</a>
-                 </div>
-                 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                     <div class="about-image">
-                         <img class="img-fluid" src="images/aboutus-image.jpg" alt="About Image">
-                     </div>
-                 </div>               
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                    <h1>About US</h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <a class="btn" href="javascript:void(0);">Learn More</a>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                    <div class="about-image">
+                        <img class="img-fluid" src="images/aboutus-image.jpg" alt="About Image">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -106,45 +109,114 @@
     <section id="Services">
         <div class="container">
             <h1>At Your Service</h1>
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
-                        <div class="service-box">
-                            <i class="fas fa-desktop"></i>            
-                            <h3>Desktop</h3>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem</p>
-                        </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                    <div class="service-box">
+                        <i class="fas fa-desktop"></i>
+                        <h3>Desktop</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem</p>
                     </div>
-                    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
-                        <div class="service-box">
-                            <i class="far fa-newspaper"></i>
-                            <h3>Up to Date</h3>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem</p>
-                        </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                    <div class="service-box">
+                        <i class="far fa-newspaper"></i>
+                        <h3>Up to Date</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem</p>
                     </div>
-                    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
-                        <div class="service-box">
-                            <i class="fas fa-paper-plane"></i>                        
-                            <h3>Ready To ship</h3>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem</p>
-                        </div>
-                    </div>                    
-                    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
-                        <div class="service-box">
-                            <i class="fas fa-heart"></i>          
-                            <h3>Made With Love</h3>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem</p>
-                        </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                    <div class="service-box">
+                        <i class="fas fa-paper-plane"></i>
+                        <h3>Ready To ship</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem</p>
                     </div>
-                    
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                    <div class="service-box">
+                        <i class="fas fa-heart"></i>
+                        <h3>Made With Love</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- service section ends here -->
+    <!-- Portfolio syles start here -->
     <section id="Portfolio">
-        
+        <div class="container">
+            <h2>Portfolio</h2>
+            <ul>
+                <div class="portfolio-images">
+                    <li><img src="images/placeholder.png" alt=""></li>
+                    <li><img src="images/placeholder.png" alt=""></li>
+                    <li><img src="images/placeholder.png" alt=""></li>
+                    <li><img src="images/placeholder.png" alt=""></li>
+                </div>
+            </ul>
+        </div>
     </section>
+    <!-- Portfolio syles ends here -->
+    <!-- contactform syles start here -->
+    <section id="Contactus">
+        <div class="container">
+            <h2>Let's Connect together</h2>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 col-xl-7">
+                    <form id="formsimplevalidation">
+                        <div class="form-group name">
+                            <input class="form-control" name="first-name" type="text" placeholder="First Name*" data-sfv-required="yes" data-sfv-minlength="3">
+                        </div>
+                        <div class="form-group name">
+                            <input class="form-control" name="last-name" type="text" placeholder="Last Name*" data-sfv-required="yes" data-sfv-minlength="3">
+                        </div>
+                        <div class="form-group email">
+                            <input class="form-control" name="email" type="text" placeholder="Email*" data-sfv-required="yes" data-sfv-validation="email">
+                        </div>
+                        <div class="form-group companyname">
+                            <input class="form-control" name="company-name" type="text" placeholder="Company Name*" data-sfv-required="yes" data-sfv-minlength="5">
+                        </div>
+                        <div class="form-group phone">
+                            <input class="form-control" data-sfv-required="yes" data-sfv-regEx="[+]\d{2}[(]\d{2}[)]\d{4}[-]\d{4}" data-sfv-regEx-errorMsg="Please enter valid Phone no" name="phone" type="text" placeholder="Phone">
+                        </div>
+                        <button class="btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 col-xl-5">
+                    <div class="address">
+                        <h3>Address</h3>
+                        <p class="street icon">
+                            <i class="fas fa-map-marker"></i>21 Test Street</p>
+                        <p class="phone icon">
+                            <i class="fas fa-phone"></i>0987654321
+                        </p>
+                        <p class="email icon"><i class="fas fa-envelope-square"></i>
+                            <a href="mailto:feedback@xyz.com">feedback@xyz.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contactform syles ends here -->
+    <!-- footer section starts here -->
+    <section id="Footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 my-auto">
+                    <p class="copyright">&copy;All rights reserved.</p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 col-xl-7">
+                    <h4>Social Connect</h4>
+                    <ul class="social-links">
+                        <li><a href="javascript:void(0)"><i class="fab fa-facebook-f fa-lg"></i></a></li>
+                        <li><a href="javascript:void(0)"><i class="fas fa-envelope"></i></a></li>
+                        <li><a href="javascript:void(0)"><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer section ends here -->
 </body>
 
 </html>

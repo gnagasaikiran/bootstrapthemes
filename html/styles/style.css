@@ -5,7 +5,8 @@
 body {
 	font-family: 'Arial','sans-serif';
 	font-size: 16px;
-	font-weight: 400px;	
+	font-weight: 400px;
+	line-height: 125%;
 }
 a, a:hover, a:focus, a:active {
 	text-decoration: none;
@@ -18,9 +19,9 @@ ul, li {
 /*global styles ends*/
 /*Header style starts here*/
 #Header {
-    padding: 20px 0;
-    background-color: #ffffff;
-    /*background-color: transparent;*/
+    padding: 12px 0;
+    /*background-color: #ffffff;*/
+    background-color: transparent;
     position: fixed;
     width: 100%;
     z-index: 9999; 
@@ -37,14 +38,11 @@ ul, li {
 #Header .logo a {
 	display: inline-block;
 }
-#Header .logo img {
-	width: 92px;
-}
 #Header .nav-menu {
 	text-align: right;
 }
 #Header ul.menu-items {
-	padding-top: 10px;
+	padding-top: 5px;
 }
 /*#Header ul li.active a {
 	color: #ccc;
@@ -59,7 +57,6 @@ ul, li {
 	padding-right: 0px;
 }
 #Header .menu-items li a {
-	font: 18px/125% 'Arial';
 	/*color: #fff;*/
 	color: #000;
 }
@@ -137,12 +134,13 @@ body.mmactive{overflow:hidden}.mobile_menu{display:none;position:relative}.sm_me
 #Banner .inner-text a.btn {
 	color: #fff;
 	text-transform: uppercase;
-	font-size: 20px;
-	padding: 13px;
+	font-size: 15px;
+	padding: 10px;
 	background-color: #f05f40;
 	border-radius: 50px;
-	font-family: arial;	
+	font-family: arial;
 	transition: 0.7s all;
+	width: 160px;
 }
 #Banner .inner-text a.btn:hover {
 	background-color: #ffffff;
@@ -154,7 +152,7 @@ body.mmactive{overflow:hidden}.mobile_menu{display:none;position:relative}.sm_me
 /*banner style ends here*/
 /*about us styles starts here*/
 #Aboutus {
-	padding: 30px 0;
+	padding: 60px 0;
 }
 #Aboutus h1 {
 	margin: 0;
@@ -164,23 +162,24 @@ body.mmactive{overflow:hidden}.mobile_menu{display:none;position:relative}.sm_me
 	padding-bottom: 20px;
 }
 #Aboutus p {
-	margin: 0;
-	font: 20px/129% 'arial';
+	margin: 0;	
 	color: #000;
 	padding-bottom: 20px;
 }
 #Aboutus a.btn {
 	color: #fff;
 	text-transform: uppercase;
-	font-size: 20px;
-	padding: 15px;
-	background-color: #f05f40;	
+	font-size: 15px;
+	padding: 10px;
+	background-color: #f05f40;
+	border-radius: 50px;
 	font-family: arial;
 	transition: 0.7s all;
+	width: 160px;
 	margin-top: 10px;
 }
 #Aboutus a.btn:hover {
-	background-color: #008000;
+	background-color: #294462;
 	color: #fff;
 	transition: 0.7s all;
 }
@@ -190,14 +189,13 @@ body.mmactive{overflow:hidden}.mobile_menu{display:none;position:relative}.sm_me
 /*about us styles ends here*/
 /*service section styles starts here*/
 #Services {
-	padding: 30px 0;
+	padding: 60px 0;
 }
 #Services h1 {
-	margin: 0;
+	margin: 0 0 40px;
 	font: 600 30px/125% 'arial';
 	color: #000;
 	/*text-transform: uppercase;*/
-	padding-bottom: 40px;
 	text-align: center;
 }
 #Services .service-box {
@@ -213,3 +211,125 @@ body.mmactive{overflow:hidden}.mobile_menu{display:none;position:relative}.sm_me
 	font: 700 26px/125% 'arial';
 }
 /*service section styles ends here*/
+/*portfolio section starts here*/
+#Portfolio {
+	padding: 60px 0;
+}
+#Portfolio h2 {
+	margin: 0 0 40px;
+	font: 700 30px/125% 'Arial';
+	text-align: center;
+}
+#Portfolio .slick-initialized .slick-slide {
+	padding-right: 10px;
+}
+#Portfolio .portfolio-images .slick-slide {
+	width: 140px;
+}
+#Portfolio .portfolio-images img {
+	width: 100%;
+	-webkit-transform: scale3d(1.0, 1.0, 1);
+	transform: scale3d(1.0, 1.0, 1);
+}
+#Portfolio button:focus {
+	outline: none;
+}
+#Portfolio .slick-prev.slick-arrow {
+	background: url('../images/left-arrow.png') no-repeat;
+	text-indent: -9999px;
+	border: 0;
+	top: 40%;
+	position: absolute;
+	left: -20px;
+	cursor: pointer;
+}
+#Portfolio .slick-next.slick-arrow {
+	background: url('../images/right-arrow.png') no-repeat;
+	text-indent: -9999px;
+	border: 0;
+	top: 40%;
+	position: absolute;
+	right: -20px;
+	cursor: pointer;
+}
+/*portfolio section ends here*/
+/*contactform syles start here*/
+#Contactus h2 {
+	margin: 0 0 30px;
+	font: 700 30px/125% 'Arial';
+	text-align: center;	
+}
+#Contactus .form-group::after {
+	content: '';
+	position: absolute;
+	background: #ccc;
+	height: 105%;
+	right: 0;
+	top: 0;
+	width: 1px;
+}
+/*#Contactus .formsection {
+	border-right: 1px solid #ccc;
+	height: 15px;
+	width: 10px;
+}*/
+#Contactus {
+	padding: 30px 0;
+}
+#Contactus h3 {
+	margin: 0 0 30px;
+	font: 700 30px/125% 'Arial';
+	text-align: center;
+}
+#Contactus .address .icon {
+	font: 16px/125% 'arial';
+	margin-bottom: 18px;
+}
+#Contactus .address .icon i {
+	margin-right: 10px;
+}
+#Contactus .form-group input {
+	border: none;
+    border-bottom: 1px solid #ccc;
+}
+/*contactform syles ends here*/
+/*Footer section starts here*/
+#Footer {
+	padding: 20px 0;
+	background-color: #000;
+}
+#Footer .copyright {
+	color: #fff;
+	font: 400 16px/125% 'arial';
+	margin-bottom: 0px;
+}
+#Footer .social-links {
+	text-align: right;
+}
+#Footer h4 {
+	margin: 0 0 10px;
+	font: 400 20px/125% 'Arial';
+	text-align: right;
+	color: #fff;
+}
+#Footer .social-links li {
+	list-style: none;
+	display: inline-block;
+	margin-right: 20px;
+	background-color: #464749;
+	border-radius: 50%;
+	padding: 10px;
+	cursor: pointer;
+}
+#Footer .social-links li:last-child {
+	margin: 0;
+}
+#Footer .social-links li:hover {
+	background: #41d1da;
+	transition: 0.7s all ease-out;
+	border: 1px solid #fff;
+}
+#Footer .social-links li i {
+	color: #fff;
+}
+/*Footer section ends here*/
