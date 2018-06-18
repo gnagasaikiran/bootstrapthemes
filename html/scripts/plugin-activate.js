@@ -20,6 +20,14 @@ $(document).ready(function() {
     slidesToScroll: 1,
     // autoplay: true,
     autoplaySpeed: 2000,
+     responsive: [
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1
+      }
+    }
+  ]
   });
   //mobile menu
   $(".mobile_menu").simpleMobileMenu();

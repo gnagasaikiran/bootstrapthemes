@@ -20,17 +20,20 @@ ul, li {
 /*Header style starts here*/
 #Header {
     padding: 12px 0;
-    /*background-color: #ffffff;*/
-    background-color: transparent;
+    background-color: #ffffff;
+    /*background-color: transparent;*/
     position: fixed;
     width: 100%;
-    z-index: 9999; 
+    z-index: 9999;
+    opacity: 0.8;
 }
 #Header.active {
 	background-color: #fff;
+	opacity: 1;
 }
 #Header.active .menu-items li a {
 	color: #000;
+	font-size: 16px;
 }
 #Header.active .logo img {
 	color: #f05f40;
@@ -64,7 +67,7 @@ ul, li {
 body.mmactive{overflow:hidden}.mobile_menu{display:none;position:relative}.sm_menu_outer.active .mobile_menu{display:block}.sm_menu_outer{height:calc(100vh - 60px);overflow-y:scroll;overflow-x:hidden;position:fixed;right:0;bottom:0;z-index:-9;width:100%;opacity:0;background-color:#000;-webkit-transition:opacity .2s;-moz-transition:opacity .2s;transition:opacity .2s}.sm_menu_outer.active{opacity:1;z-index:999}.sm_menu_outer .mobile_menu li.back a{padding:20px 5px 20px 55px;background:url(../images/back.png) 15px center/5% auto no-repeat}.sm_menu_outer .mobile_menu a{color:#fff;display:block;font:300 18px/140% Lato,sans-serif;letter-spacing:1px;padding:20px 15px;text-transform:uppercase;text-decoration:none}.sm_menu_outer .mobile_menu .submenu{background-color:#000;height:100%;position:absolute;right:-100%;top:0;transition:all .5s ease 0s;width:100%;z-index:999}.sm_menu_outer .mobile_menu li.active>.submenu{right:0}.sm_menu_outer .mobile_menu li{list-style-type:none;border-bottom:.5px solid transparent;border-image:linear-gradient(to right,rgba(0,0,0,0) 0,#2a2a2a 20%,#2a2a2a 50%,#2a2a2a 80%,rgba(0,0,0,0) 100%) 0 0 1 0;color:#fff}.sm_menu_outer .mobile_menu li.hasChild>a{background:url(../images/next.png) 95% center/5% auto no-repeat}#sm_menu_ham{cursor:pointer;float:right;height:25px;position:fixed;-webkit-transform:rotate(0);-moz-transform:rotate(0);transform:rotate(0);-webkit-transition:all .5s ease-in-out 0s;-moz-transition:all .5s ease-in-out 0s;-o-transition:all .5s ease-in-out 0s;transition:all .5s ease-in-out 0s;width:30px;top:15px;right:15px;z-index:9999}#sm_menu_ham span{background-color:#FFF;border-radius:5px;display:block;height:2px;left:0;opacity:1;position:absolute;-webkit-transform:rotate(0);-moz-transform:rotate(0);transform:rotate(0);-webkit-transition:all .25s ease-in-out 0s;-moz-transition:all .25s ease-in-out 0s;-o-transition:all .25s ease-in-out 0s;transition:all .25s ease-in-out 0s;width:30px}#sm_menu_ham span:nth-child(1){top:0}#sm_menu_ham span:nth-child(2),#sm_menu_ham span:nth-child(3){top:10px}#sm_menu_ham span:nth-child(4){top:20px}#sm_menu_ham.open span:nth-child(1),#sm_menu_ham.open span:nth-child(4){left:50%;top:18px;width:0}#sm_menu_ham.open span:nth-child(2){-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);transform:rotate(45deg)}#sm_menu_ham.open span:nth-child(3){-webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);transform:rotate(-45deg)}@media (min-width:1024px){#sm_menu_ham,.sm_menu_outer{display:none}}
 #sm_menu_ham {
 	background-color: red;
-	top: 22px;
+	top: 13px;
 	right: 22px;
 }
 #sm_menu_ham span {
@@ -81,7 +84,7 @@ body.mmactive{overflow:hidden}.mobile_menu{display:none;position:relative}.sm_me
 	top: 17px;
 }
 .sm_menu_outer {
-	top: 70px;
+	top: 51px;
 	background-color: red;
 }
 .mobile_menu {
@@ -107,8 +110,14 @@ body.mmactive{overflow:hidden}.mobile_menu{display:none;position:relative}.sm_me
 	bottom: 19px;
 	padding-top: 0px;
 }
-#Banner .bx-wrapper .bx-pager.bx-default-pager a.active, #Banner.bx-wrapper .bx-pager.bx-default-pager a:focus, #Banner .bx-wrapper .bx-pager.bx-default-pager a:hover {
-	background: #f1f7ee;
+#Banner .bx-pager-link {
+	background-color: #f1f7ee;
+	transition: all 0.5s ease 0s;
+}
+#Banner .bx-pager-link.active {
+	height: 16px;
+	width: 35px;
+	background-color: #e4794c;
 }
 #Banner li img {
 	width: 100%;
@@ -141,6 +150,7 @@ body.mmactive{overflow:hidden}.mobile_menu{display:none;position:relative}.sm_me
 	font-family: arial;
 	transition: 0.7s all;
 	width: 160px;
+	letter-spacing: 1.5px;
 }
 #Banner .inner-text a.btn:hover {
 	background-color: #ffffff;
@@ -155,11 +165,10 @@ body.mmactive{overflow:hidden}.mobile_menu{display:none;position:relative}.sm_me
 	padding: 60px 0;
 }
 #Aboutus h1 {
-	margin: 0;
 	font: 600 30px/125% 'arial';
 	color: #000;
 	text-transform: uppercase;
-	padding-bottom: 20px;
+	margin-bottom: 20px;
 }
 #Aboutus p {
 	margin: 0;	
@@ -177,6 +186,7 @@ body.mmactive{overflow:hidden}.mobile_menu{display:none;position:relative}.sm_me
 	transition: 0.7s all;
 	width: 160px;
 	margin-top: 10px;
+	letter-spacing: 1.5px;
 }
 #Aboutus a.btn:hover {
 	background-color: #294462;
@@ -215,7 +225,7 @@ body.mmactive{overflow:hidden}.mobile_menu{display:none;position:relative}.sm_me
 #Portfolio {
 	padding: 60px 0;
 }
-#Portfolio h2 {
+#Portfolio h1 {
 	margin: 0 0 40px;
 	font: 700 30px/125% 'Arial';
 	text-align: center;
@@ -254,27 +264,16 @@ body.mmactive{overflow:hidden}.mobile_menu{display:none;position:relative}.sm_me
 }
 /*portfolio section ends here*/
 /*contactform syles start here*/
-#Contactus h2 {
+#Contactus h1 {
 	margin: 0 0 30px;
 	font: 700 30px/125% 'Arial';
 	text-align: center;	
 }
-#Contactus .form-group::after {
-	content: '';
-	position: absolute;
-	background: #ccc;
-	height: 105%;
-	right: 0;
-	top: 0;
-	width: 1px;
-}
-/*#Contactus .formsection {
+#Contactus .br-rt {
 	border-right: 1px solid #ccc;
-	height: 15px;
-	width: 10px;
-}*/
+}
 #Contactus {
-	padding: 30px 0;
+	padding: 55px 0;
 }
 #Contactus h3 {
 	margin: 0 0 30px;
@@ -284,13 +283,67 @@ body.mmactive{overflow:hidden}.mobile_menu{display:none;position:relative}.sm_me
 #Contactus .address .icon {
 	font: 16px/125% 'arial';
 	margin-bottom: 18px;
+	color: #999999;
+}
+#Contactus .address .icon a {
+	text-decoration: none;
+	color: #999999;
+	font-size: 16px;
+	line-height: 180%;
 }
 #Contactus .address .icon i {
 	margin-right: 10px;
+	color: #6991ac;
+}
+#Contactus .floating-label {
+	position: relative;
+	height: 38px;
+	margin-bottom: 30px;
 }
 #Contactus .form-group input {
 	border: none;
     border-bottom: 1px solid #ccc;
+}
+#Contactus .form-group label {
+	position: absolute;
+	top: 0;
+	color: #ccc;
+	transition: all 0.3s ease-in-out;
+}
+#Contactus .form-control:focus {
+	border-color: #0672c9;
+	border-width: 2px;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+#Contactus .form-control:focus ~ label {
+	top: -10px;
+	font-size: 10px;
+	color: #0672c9;
+	text-transform: uppercase;
+	font-weight: 300;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+#Contactus .form-btn {
+	font-size: 20px;
+	font-weight: 300;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+	background-color: #0672c9;
+	color: #fff;
+	text-align: center;
+	padding: 10px 40px;
+	border-radius: 30px;
+	border: 0;
+	outline: 0;
+	cursor: pointer;
+}
+#Contactus .form-btn:focus {
+	box-shadow: none;
+}
+#Contactus .map {
+	width: 100%;
 }
 /*contactform syles ends here*/
 /*Footer section starts here*/
@@ -306,12 +359,6 @@ body.mmactive{overflow:hidden}.mobile_menu{display:none;position:relative}.sm_me
 #Footer .social-links {
 	text-align: right;
 }
-#Footer h4 {
-	margin: 0 0 10px;
-	font: 400 20px/125% 'Arial';
-	text-align: right;
-	color: #fff;
-}
 #Footer .social-links li {
 	list-style: none;
 	display: inline-block;
@@ -325,9 +372,17 @@ body.mmactive{overflow:hidden}.mobile_menu{display:none;position:relative}.sm_me
 	margin: 0;
 }
 #Footer .social-links li:hover {
-	background: #41d1da;
-	transition: 0.7s all ease-out;
+	transition: 0.3s all ease-in;
 	border: 1px solid #fff;
+}
+#Footer .social-links li.facebook:hover {
+	background-color: #3b5998;
+}
+#Footer .social-links li.mail:hover {
+	background-color: #dd5043;
+}
+#Footer .social-links li.linkedin:hover {
+	background-color: #0077b5;
 }
 #Footer .social-links li i {
 	color: #fff;
