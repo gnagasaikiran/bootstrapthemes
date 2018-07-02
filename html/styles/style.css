@@ -4,7 +4,7 @@
 body {
 	font-family: 'Arial','sans-serif';
 	font-size: 16px;
-	font-weight: 400px;
+	font-weight: 400;
 	line-height: 125%;
 }
 a, a:hover, a:focus, a:active {
@@ -67,11 +67,22 @@ body.mmactive{overflow:hidden}.mobile_menu{display:none;position:relative}.sm_me
 #sm_menu_ham {
 	background-color: #6991ac;
 	top: 13px;
-	right: 22px;
+	border-radius: 30%;
+}
+.sm_menu_outer {
+	width: auto;
+}
+.sm_menu_outer .mobile_menu a {
+	padding-top: 18px;
+	padding-bottom: 18px;
+	font-size: 16px;
 }
 #sm_menu_ham span {
-	width: 22px;
-    left: 4px;
+	width: 20px;
+	left: 5px;
+}
+.sm_menu_outer.active {
+	z-index: 9999;
 }
 #sm_menu_ham span:nth-child(1) {
 	top: 4px;
@@ -150,22 +161,41 @@ body.mmactive{overflow:hidden}.mobile_menu{display:none;position:relative}.sm_me
 	transition: 0.7s all;
 	width: 160px;
 	letter-spacing: 1.5px;
+	position: relative;
+	z-index: 1;
 }
+/*#Banner .inner-text a.btn:after {
+	content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: orange;
+    z-index: -1;
+    transform-origin: 0% 0%;
+    transform: translateY(10%) translateX(calc(20% - 25px)) rotate(-45deg);
+    transition: transform .3s;
+}
+#Banner .inner-text a.btn:hover::after {
+  transform: translateY(10%) translateX(-25px) rotate(-45deg);
+}*/
 #Banner .inner-text a.btn:hover {
 	background-color: #ffffff;
 	color: #000;
+	transition: 0.5s all;
 }
 #Banner .inner-text a.btn:focus {
 	box-shadow: none;
 }
-#Banner span {
-	background: url('../images/icon-gray-arrow.png') no-repeat;
-	width: 25px;
+#Banner .bx-wrapper .bx-controls .bx-controls-direction a {
+	width: 75px;
 	height: 25px;
-	/* display: inline-block; */
-	position: absolute;
-	top: 180px;
-	right: 325px;
+	background-position: center;
+}
+#Banner .bx-wrapper .bx-controls .bx-prev {
+	background: url('../images/lt-arrow.png') no-repeat;	  
+}
+#Banner .bx-wrapper .bx-controls .bx-next {
+	background: url('../images/rt-arrow.png') no-repeat;	
 }
 /*banner style ends here*/
 /*about us styles starts here*/
@@ -191,14 +221,12 @@ body.mmactive{overflow:hidden}.mobile_menu{display:none;position:relative}.sm_me
 	background-color: #f05f40;
 	border-radius: 50px;
 	font-family: arial;
-	transition: 0.7s all;
 	width: 160px;
 	margin-top: 10px;
 	letter-spacing: 1.5px;
 }
 #Aboutus a.btn:hover {
 	background-color: #294462;
-	color: #fff;
 	transition: 0.7s all;
 }
 #Aboutus a.btn:focus {
@@ -269,6 +297,50 @@ body.mmactive{overflow:hidden}.mobile_menu{display:none;position:relative}.sm_me
 	right: -20px;
 	cursor: pointer;
 }
+#Portfolio .portfolio-one .hover-content, 
+#Portfolio .portfolio-two .hover-content,
+#Portfolio .portfolio-three .hover-content,
+#Portfolio .portfolio-four .hover-content {
+	visibility: hidden;
+	position: absolute;
+	text-align: center;
+	top: 31%;
+	left: 30%;
+}
+#Portfolio .portfolio-two .hover-content {
+	left: 39%;
+}
+#Portfolio .portfolio-three .hover-content {
+	left: 49%;
+}
+#Portfolio .portfolio-four .hover-content {
+	left: 58%;
+}
+#Portfolio .hover-content h3, #Portfolio .hover-content p {
+	font-size: 16px;
+	font-family: 'arial';
+	margin-bottom: 10px;
+	color: #000;
+	font-weight: 700;
+}
+#Portfolio .portfolio-one:hover .hover-content,
+#Portfolio .portfolio-two:hover .hover-content, 
+#Portfolio .portfolio-three:hover .hover-content, 
+#Portfolio .portfolio-four:hover .hover-content {
+	visibility: visible;
+}
+#Portfolio .portfolio-one img,
+#Portfolio .portfolio-two img,
+#Portfolio .portfolio-three img,
+#Portfolio .portfolio-four img {
+	opacity: 1;
+}
+#Portfolio .portfolio-one:hover img,
+#Portfolio .portfolio-two:hover img,
+#Portfolio .portfolio-three:hover img,
+#Portfolio .portfolio-four:hover img {
+	opacity: 0.5;
+}
 /*portfolio section ends here*/
 /*contactform syles start here*/
 #Contactus h1 {
@@ -313,9 +385,14 @@ body.mmactive{overflow:hidden}.mobile_menu{display:none;position:relative}.sm_me
 }
 #Contactus .form-group label {
 	position: absolute;
-	top: 0;
+	top: 0px;
+	left: 0px;
 	color: #ccc;
 	transition: all 0.3s ease-in-out;
+	z-index: -1;
+}
+#Contactus .form-control {
+	background-color: transparent;
 }
 #Contactus .form-control:focus {
 	border-color: #0672c9;
@@ -349,13 +426,18 @@ body.mmactive{overflow:hidden}.mobile_menu{display:none;position:relative}.sm_me
 #Contactus .form-btn:focus {
 	box-shadow: none;
 }
+#Contactus .form-btn:hover {
+	background-color: #316996;
+	transition: 0.5s all;
+}
 #Contactus .map {
 	width: 100%;
 }
-#formsimplevalidation span {
-	position: relative;
-	top: -14px;
-	right: -100px;
+#formsimplevalidation .errormsg {	
+	position: absolute;
+	top: 0px;
+	right: 0;
+	color: #ff0000;
 }
 /*contactform syles ends here*/
 /*Footer section starts here*/
@@ -398,5 +480,29 @@ body.mmactive{overflow:hidden}.mobile_menu{display:none;position:relative}.sm_me
 }
 #Footer .social-links li i {
 	color: #fff;
+}
+#back-to-top {
+	position: fixed;
+	bottom: 20px;
+	right: 50px;
+	color: #fff;
+	background-color: red;
+	padding: 10px;
+	border-radius: 50%;
+	font-size: 18px;
+	text-align: center;
+	cursor: pointer;
+}
+#back-to-top p {
+	margin-bottom: 0px;
+	display: none;
+	font-size: 12px;
+}
+#back-to-top:hover p {
+	display: block;
+}
+#back-to-top:hover {
+    background-color: #0672c9;
+    padding-top: 5px;
 }
 /*Footer section ends here*/

@@ -9,7 +9,7 @@
     <title>Bootstrap Theme</title>
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- favicons -->
+    <!-- favicons start here-->
     <link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="images/favicons/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-icon-72x72.png">
@@ -19,7 +19,7 @@
     <link rel="apple-touch-icon" sizes="144x144" href="images/favicons/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="images/favicons/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="images/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/favicons/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="images/favicons/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
@@ -27,14 +27,14 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <!-- favicons -->
+    <!-- favicons ends here-->
     <!-- fontawesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <!-- Stylesheet starts-->
     <link rel="stylesheet" type="text/css" href="styles/style.css">
     <link rel="stylesheet" type="text/css" href="styles/custom-style.css">
-    <!-- Add the slick-theme.css-->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- Slick-theme.css-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <!-- Stylesheet ends-->
     <!-- script files -->
     <script type="text/javascript" src="scripts/jquery-2.2.4.min.js"></script>
@@ -77,17 +77,7 @@
     <!-- banner style starts here -->
     <section id="Banner">
         <ul class="bxslider">
-            <li><img src="images/bg-image3.jpeg" alt="Banner Image">
-                <div class="inner-text">
-                    <div class="container">
-                        <h1>YOUR FAVOURITE SOURCE OF FREE BOOTSTRAP THEMES</h1>
-                        <hr class="highlighter">
-                        <a class="btn" href="#Services">Find out More</a>
-                        <span class="ar-down"></span>
-                    </div>
-                </div>
-            </li>
-            <li><img src="images/bg-image3.jpeg" alt="Banner Image">
+            <li><img src="images/bg-image.jpeg" alt="Banner Image">
                 <div class="inner-text">
                     <div class="container">
                         <h1>YOUR FAVOURITE SOURCE OF FREE BOOTSTRAP THEMES</h1>
@@ -96,7 +86,16 @@
                     </div>
                 </div>
             </li>
-            <li><img src="images/bg-image3.jpeg" alt="Banner Image">
+            <li><img src="images/bg-image.jpeg" alt="Banner Image">
+                <div class="inner-text">
+                    <div class="container">
+                        <h1>YOUR FAVOURITE SOURCE OF FREE BOOTSTRAP THEMES</h1>
+                        <hr class="highlighter">
+                        <a class="btn" href="#Services">Find out More</a>
+                    </div>
+                </div>
+            </li>
+            <li><img src="images/bg-image.jpeg" alt="Banner Image">
                 <div class="inner-text">
                     <div class="container">
                         <h1>YOUR FAVOURITE SOURCE OF FREE BOOTSTRAP THEMES</h1>
@@ -119,7 +118,7 @@
                 </div>
                 <div class="col-xs-6 col-sm-12 col-md-12 col-lg-6 col-xl-6">
                     <div class="about-image">
-                        <img class="img-fluid" src="images/aboutus-img2.jpeg" alt="About Image">
+                        <img class="img-fluid" src="images/aboutus-img.jpeg" alt="About Image">
                     </div>
                 </div>
             </div>
@@ -169,10 +168,31 @@
             <h1>Portfolio</h1>
             <ul>
                 <div class="portfolio-images">
-                    <li><img src="images/tech.jpeg" alt=""></li>
-                    <li><img src="images/tech2.jpeg" alt=""></li>
-                    <li><img src="images/tech3.jpeg" alt=""></li>                    
-                    <li><img src="images/tech4.jpeg" alt=""></li>            
+                    <li class="portfolio-one">
+                        <img src="images/tech.jpeg" alt="">
+                        <div class="hover-content">
+                            <h3 class="title">Title</h3>
+                            <p class="author">Author Name</p>
+                        </div>
+                    </li>
+                    <li class="portfolio-two"><img src="images/tech2.jpeg" alt="">
+                        <div class="hover-content">
+                            <h3 class="title">Title</h3>
+                            <p class="author">Author Name</p>
+                        </div>
+                    </li>
+                    <li class="portfolio-three"><img src="images/tech3.jpeg" alt="">
+                        <div class="hover-content">
+                            <h3 class="title">Title</h3>
+                            <p class="author">Author Name</p>
+                        </div>
+                    </li>
+                    <li class="portfolio-four"><img src="images/tech4.jpeg" alt="">
+                        <div class="hover-content">
+                            <h3 class="title">Title</h3>
+                            <p class="author">Author Name</p>
+                        </div>
+                    </li>
                 </div>
             </ul>
         </div>
@@ -234,13 +254,16 @@
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 col-xl-7">
                     <ul class="social-links">
-                        <li class="facebook"><a href="javascript:void(0)"><i class="fab fa-facebook-f fa-lg"></i></a></li>
-                        <li class="mail"><a href="javascript:void(0)"><i class="fas fa-envelope"></i></a></li>
-                        <li class="linkedin"><a href="javascript:void(0)"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li class="facebook"><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f fa-lg"></i></a></li>
+                        <li class="mail"><a href="https://www.google.com/gmail/about/" target="_blank"><i class="fas fa-envelope"></i></a></li>
+                        <li class="linkedin"><a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
                     </ul>
                 </div>
             </div>
-        </div>
+        </div>        
+        <a id="back-to-top" title="Go to top"><i class="fas fa-arrow-up"></i>
+            <p>Top</p></a>
+        <!-- <a onclick="topFunction()" href="#Aboutus" id="back-to-top" title="Go to top"><i class="fas fa-arrow-up"></i></a> -->
     </section>
     <!-- footer section ends here -->
 </body>
